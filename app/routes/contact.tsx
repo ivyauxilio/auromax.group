@@ -6,8 +6,8 @@ export default function Contacts() {
       <p>This is the About page for our React Router v7 app.</p> */}
 
       <section id="support" className="i pg fh rm ji gp uq">
-        <img src="images/shape-06.svg" alt="Shape" className="h aa y" />
-        <img src="images/shape-03.svg" alt="Shape" className="h ca u" />
+        <img src="/images/shape-06.svg" alt="Shape" className="h aa y" />
+        <img src="/images/shape-03.svg" alt="Shape" className="h ca u" />
         {/* <img src="images/shape-07.svg" alt="Shape" className="h w da ee" /> */}
         <svg height="200px" width="200px" className="h w da ee">
           <g transform="rotate(0, 100, 100)">
@@ -21,8 +21,8 @@ export default function Contacts() {
           </g>
         </svg>
 
-        <img src="images/shape-12.svg" alt="Shape" className="h p s" />
-        <img src="images/shape-13.svg" alt="Shape" className="h r q" />
+        <img src="/images/shape-12.svg" alt="Shape" className="h p s" />
+        <img src="/images/shape-13.svg" alt="Shape" className="h r q" />
 
         <div className="text-center mb-12">
           <div className="animate_top bb ze rj ki xn vq">
@@ -40,12 +40,12 @@ export default function Contacts() {
           <div className="tc uf sn tf rn un zf xl:gap-10">
             <div className="animate_top w-full mn/5 to/3 vk sg hh sm yh rq i pg">
               <img
-                src="images/shape-03.svg"
+                src="/images/shape-03.svg"
                 alt="Shape"
                 className="h la x wd"
               />
               <img
-                src="images/shape-06.svg"
+                src="/images/shape-06.svg"
                 alt="Shape"
                 className="h la ma ne kf"
               />
@@ -70,7 +70,7 @@ export default function Contacts() {
                   rel="noopener noreferrer"
                   className="c tc wf xf ie ld rg ml il tl"
                 >
-                  <img src="images/whatsapp.svg" alt="Shape" className="wd" />
+                  <img src="/images/whatsapp.png" alt="Shape" className="wd" />
                 </a>
               </div>
               <span className="rc nd rh tm lc fb"></span>
@@ -223,7 +223,7 @@ export default function Contacts() {
         ></iframe>
       </div>
       <section className="i pg gh ji">
-        <img className="h p q" src="images/shape-16.svg" alt="Bg Shape" />
+        <img className="h p q" src="/images/shape-16.svg" alt="Bg Shape" />
 
         <div className="bb ye i z-10 ki xn dr">
           <div className="tc uf sn tn un gg">

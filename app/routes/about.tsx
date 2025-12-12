@@ -15,13 +15,13 @@ export default function About() {
                     alt="Shape"
                     className="h -ud-left-5 x"
                   />
-                  <img src="images/about-01.png" alt="About" className="ib" />
-                  <img src="images/about-02.png" alt="About" />
+                  <img src="/images/about-01.png" alt="About" className="ib" />
+                  <img src="/images/about-02.png" alt="About" />
                 </div>
                 <div>
-                  <img src="images/shape-06.svg" alt="Shape" />
+                  <img src="/images/shape-06.svg" alt="Shape" />
                   <img
-                    src="images/about-03.png"
+                    src="/images/about-03.png"
                     alt="About"
                     className="ob gb"
                   />

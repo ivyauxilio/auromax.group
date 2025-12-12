@@ -72,9 +72,9 @@ export default function OurCompanyPage() {
       </div>
       <section className="i pg ji gp uq">
         <span className="rc h s r vd fd/5 fh rm"></span>
-        <img src="images/shape-08.svg" alt="Shape Bg" className="h q r" />
-        <img src="images/shape-09.svg" alt="Shape" className="of h y z/2" />
-        <img src="images/shape-10.svg" alt="Shape" className="h _ aa" />
+        <img src="/images/shape-08.svg" alt="Shape Bg" className="h q r" />
+        <img src="/images/shape-09.svg" alt="Shape" className="of h y z/2" />
+        <img src="/images/shape-10.svg" alt="Shape" className="h _ aa" />
         {/* <img src="images/shape-11.svg" alt="Shape" className="of h m ba" /> */}
 
         <div className="of h m ba">
@@ -108,7 +108,7 @@ export default function OurCompanyPage() {
           <div className="wc qf pn xo gg cp">
             <div className="animate_top rj">
               <div className="c i pg z-1">
-                <img className="vd" src="images/team-01.png" alt="Team" />
+                <img className="vd" src="/images/team-01.png" alt="Team" />
 
                 <div className="ef im nl il">
                   <span className="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
@@ -168,7 +168,7 @@ export default function OurCompanyPage() {
 
             <div className="animate_top rj">
               <div className="c i pg z-1">
-                <img className="vd" src="images/team-02.png" alt="Team" />
+                <img className="vd" src="/images/team-02.png" alt="Team" />
 
                 <div className="ef im nl il">
                   <span className="h -ud-left-5 -ud-bottom-21 rc de gd gh if wa"></span>
