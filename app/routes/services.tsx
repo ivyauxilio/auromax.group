@@ -1,22 +1,6 @@
-import { Helmet } from "react-helmet-async";
-
 export default function Services() {
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content="AuroMax Group's four services: Trading & Commodities, Property Development,
-           Market Entry Services, and Community & CSR — all focused exclusively on Indonesia."
-        />
-        <meta property="og:title" content="Our Services — AuroMax Group" />
-        <meta
-          property="og:description"
-          content="Four services, one partner, all Indonesia. Trading, property, market entry and CSR under one roof."
-        />
-        <meta property="og:type" content="website" />
-        <title>Our Services — AuroMax Group</title>
-      </Helmet>
       <div className="services">
         <section className="hero">
           <div className="h-img"></div>

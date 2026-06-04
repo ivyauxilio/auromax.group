@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Helmet } from "react-helmet-async";
 
 export function Welcome() {
   const videos = ["/video/lombok.mp4", "/video/csr.mp4", "/video/ship.mp4"];
@@ -52,27 +51,6 @@ export function Welcome() {
 
   return (
     <>
-      <Helmet>
-        <title>AuroMax Group — Trust First. Desire Always.</title>
-
-        <meta
-          name="description"
-          content="AuroMax Group connects global partners to Indonesia's natural commodities, property, market access and community investment. Trust First. Desire Always."
-        />
-
-        <meta
-          name="keywords"
-          content="Logistics, Copper Supply Chain, business solutions"
-        />
-
-        {/* Open Graph */}
-        <meta property="og:title" content="AuroMax Group — Indonesia Gateway" />
-        <meta
-          property="og:description"
-          content="Indonesia's gateway to natural resources, land and markets. Four services. One partner."
-        />
-        <meta property="og:image" content="/images/AuroMax-logo.png" />
-      </Helmet>
       <main>
         <section className="hero">
           <div className="h-img"></div>

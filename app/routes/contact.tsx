@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 
 export default function Contacts() {
   const [submitted, setSubmitted] = useState(false);
@@ -11,23 +10,6 @@ export default function Contacts() {
 
   return (
     <>
-      <Helmet>
-        <title>Contact AuroMax — Trust First. Desire Always.</title>
-        <meta
-          name="description"
-          content="Get in touch with AuroMax Group. 
-          Every message is answered personally within 1 to 2 business days. Trust First. Desire Always."
-        />
-        <meta
-          property="og:title"
-          content="Contact AuroMax Group — Talk to Indonesia"
-        />
-        <meta
-          property="og:description"
-          content="Every AuroMax conversation starts with honesty. Reach out today and we will respond personally within 1 to 2 business days."
-        />
-        <meta property="og:type" content="website" />
-      </Helmet>
       <div className="contact-page">
         <section className="hero">
           <div className="h-img"></div>

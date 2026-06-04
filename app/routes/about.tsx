@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 
 export default function About() {
   const [openId, setOpenId] = useState<string | null>(null);
@@ -9,25 +8,6 @@ export default function About() {
   };
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content="About AuroMax Group — built inside Indonesia, for Indonesia. 
-                  Our story, mission, values, and why Indonesia is the world's next great economic story."
-        />
-        <meta
-          property="og:title"
-          content="About AuroMax Group — Of Indonesia, Not Merely in It"
-        />
-        <meta
-          property="og:description"
-          content="AuroMax was built inside Indonesia, for Indonesia. 
-          Learn our story, values, and why we believe Indonesia is the world's next great economic story."
-        />
-        <meta property="og:type" content="website" />
-        <title>About AuroMax Group — Of Indonesia, Not Merely in It</title>
-      </Helmet>
-
       <div className="about">
         <section className="hero">
           <div className="h-img"></div>

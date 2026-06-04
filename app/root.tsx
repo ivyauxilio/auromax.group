@@ -6,7 +6,6 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-import { HelmetProvider } from "react-helmet-async";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -58,24 +57,22 @@ export const meta: Route.MetaFunction = () => {
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <HelmetProvider>
-      <html lang="en">
-        <head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <Meta />
-          <Links />
-        </head>
-        <body>
-          <CustomCursor />
-          <Header />
-          {children}
-          <Footer />
-          <ScrollRestoration />
-          <Scripts />
-        </body>
-      </html>
-    </HelmetProvider>
+    <html lang="en">
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <CustomCursor />
+        <Header />
+        {children}
+        <Footer />
+        <ScrollRestoration />
+        <Scripts />
+      </body>
+    </html>
   );
 }
 
