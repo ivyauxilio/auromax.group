@@ -5,7 +5,12 @@ export function Welcome() {
 
   const [index, setIndex] = useState(0);
   const [fade, setFade] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
 
+  const handleSub = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
   const slides = [
     {
       video: "/video/lombok.mp4",
@@ -88,10 +93,10 @@ export function Welcome() {
                 know here.
               </p>
               <div className="hl-btns a5">
-                <a href="services.html" className="btn-e">
+                <a href="/services" className="btn-e">
                   Our four services
                 </a>
-                <a href="about.html" className="btn-gl">
+                <a href="/about" className="btn-gl">
                   Our story
                 </a>
               </div>
@@ -193,7 +198,7 @@ export function Welcome() {
             </div>
           </div>
           <div className="svc-grid">
-            <a href="services.html#trading" className="sc">
+            <a href="/services#trading" className="sc">
               <div className="sc-img"></div>
               <div className="sc-ov"></div>
               <div className="sc-arr">↗</div>
@@ -219,7 +224,7 @@ export function Welcome() {
                 </div>
               </div>
             </a>
-            <a href="services.html#property" className="sc">
+            <a href="/services#property" className="sc">
               <div className="sc-img"></div>
               <div className="sc-ov"></div>
               <div className="sc-arr">↗</div>
@@ -245,7 +250,7 @@ export function Welcome() {
                 </div>
               </div>
             </a>
-            <a href="services.html#mes" className="sc">
+            <a href="/services#mes" className="sc">
               <div className="sc-img"></div>
               <div className="sc-ov"></div>
               <div className="sc-arr">↗</div>
@@ -270,7 +275,7 @@ export function Welcome() {
                 </div>
               </div>
             </a>
-            <a href="services.html#csr" className="sc">
+            <a href="/services#csr" className="sc">
               <div className="sc-img"></div>
               <div className="sc-ov"></div>
               <div className="sc-arr">↗</div>
@@ -311,7 +316,7 @@ export function Welcome() {
                 knowledge to act on them before anyone else catches up."
               </p>
               <a
-                href="about.html#indonesia"
+                href="/about#indonesia"
                 className="btn-e"
                 style={{ marginTop: "24px", display: "inline-block" }}
               >
@@ -360,7 +365,7 @@ export function Welcome() {
                 "Indonesia is not some emerging bet. It is a real powerhouse the
                 world has quietly <strong>underestimated for too long.</strong>"
               </div>
-              <a href="contact.html" className="btn-g">
+              <a href="/contact" className="btn-g">
                 Talk to AuroMax
               </a>
             </div>
@@ -592,7 +597,7 @@ export function Welcome() {
                 </div>
               </div>
             </div>
-            <a href="contact.html" className="btn-e">
+            <a href="/contact" className="btn-e">
               Start the conversation
             </a>
           </div>
@@ -634,9 +639,9 @@ export function Welcome() {
               Every message is answered by a real person, not a bot.
             </div>
             <form
-              action="https://formspree.io/f/YOUR_FORM_ID"
+              action="https://formspree.io/f/xgobvvvr"
               method="POST"
-              // onsubmit="handleSub(event)"
+              onSubmit={handleSub}
             >
               <div className="cf-row">
                 <div className="fg">
@@ -688,13 +693,22 @@ export function Welcome() {
                   placeholder="Tell us what you are working towards in Indonesia. The more you share, the more useful our reply will be."
                 ></textarea>
               </div>
-              <button type="submit" className="cf-submit">
-                Send message and we'll be in touch →
+              <button
+                type="submit"
+                className="cf-submit"
+                disabled={submitted}
+                style={{
+                  background: submitted ? "var(--jade)" : "",
+                }}
+              >
+                {submitted
+                  ? "Sent, we will be in touch within 1 to 2 business days."
+                  : "Send message and we'll be in touch →"}
               </button>
               <div className="cf-note">
                 We never share your details. We reply within 1 to 2 business
                 days.{" "}
-                <a href="privacy.html" style={{ color: "inherit" }}>
+                <a href="#" style={{ color: "inherit" }}>
                   Privacy policy
                 </a>
                 .
