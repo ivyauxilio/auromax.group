@@ -28,7 +28,7 @@ export function Welcome() {
 
   const [current, setCurrent] = useState(0);
 
-  const [openId, setOpenId] = useState<string | null>(null);
+  const [openId, setOpenId] = useState<string | null>("v1");
 
   const toggleView = (id: string) => {
     setOpenId((prev) => (prev === id ? null : id));

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function About() {
-  const [openId, setOpenId] = useState<string | null>(null);
+  const [openId, setOpenId] = useState<string | null>("v1");
 
   const toggleView = (id: string) => {
     setOpenId((prev) => (prev === id ? null : id));
