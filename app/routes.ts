@@ -13,7 +13,7 @@ export default [
   route("about", "routes/about.tsx"), // renders at "/about"
   route("welcome", "welcome/welcome.tsx"), // renders at "/welcome"
   route("services", "routes/services.tsx"),
-  route("our-company", "routes/company.tsx"),
-  route("news-and-opportunities", "routes/news.tsx"),
+  // route("our-company", "routes/company.tsx"),
+  // route("news-and-opportunities", "routes/news.tsx"),
   route("contact", "routes/contact.tsx"),
 ] satisfies RouteConfig;

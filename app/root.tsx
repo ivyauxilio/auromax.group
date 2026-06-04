@@ -6,12 +6,14 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import "../public/style.css";
+import "../public/style.scss";
+import CustomCursor from "./customCursor";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -28,11 +30,11 @@ export const links: Route.LinksFunction = () => [
 
 export const meta: Route.MetaFunction = () => {
   return [
-    { title: "AuroMax Group" },
+    { title: "AuroMax Group — Trust First. Desire Always." },
     {
       name: "description",
       content:
-        "We move where opportunity flows - delivering results in property, trade, and community impact.",
+        "AuroMax Group connects global partners to Indonesia's natural commodities, property, market access and community investment. Trust First. Desire Always.",
     },
     {
       name: "keywords",
@@ -40,12 +42,12 @@ export const meta: Route.MetaFunction = () => {
     },
     {
       property: "og:title",
-      content: "AuroMax Group",
+      content: "AuroMax Group — Indonesia Gateway",
     },
     {
       property: "og:description",
       content:
-        "Our business evolves as fast as the markets we operate in  - we thrive on identifying and seizing opportunities the moment they arise",
+        "Indonesia's gateway to natural resources, land and markets. Four services. One partner.",
     },
     {
       property: "og:image",
@@ -60,10 +62,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <Meta />
+        {/* <Meta /> */}
         <Links />
       </head>
       <body>
+        <CustomCursor />
         <Header />
         {children}
         <Footer />

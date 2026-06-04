@@ -124,7 +124,7 @@ export default function News() {
 
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition bg-black/40 rounded-lg">
                   <a
-                    href="./blog-single.html"
+                    href="#"
                     className="vc ek rg lk gh sl ml il gi hi bg-white px-4 py-2 rounded"
                   >
                     Read More
@@ -137,7 +137,7 @@ export default function News() {
 
                 {/* <h3 className="text-xl font-bold mt-2 mb-3"></h3> */}
                 <h4 className="ek tj ml il kk wm xl eq lb">
-                  <a href="blog-single.html">{item.title}</a>
+                  <a href="#">{item.title}</a>
                 </h4>
 
                 <p className="text-gray-600 mb-4">{item.description}</p>

@@ -29,104 +29,46 @@ export default function Header() {
   }, [location.pathname]);
 
   return (
-    <header
-      className={`bg-white fixed top-0 left-0 w-full z-50 transition-all duration-300 
-      ${scrolled ? "bg-white/70 backdrop-blur-lg shadow-lg" : "bg-transparent"}
-    `}
-    >
-      <nav className="mx-auto max-w-7xl flex items-center justify-between px-6 py-4 lg:px-8">
-        <div className="vd to/4 tc wf yf">
-          <a href="/" className="flex items-center">
-            <img
-              className="om w-1/5 mr-4"
-              src="images/AuroMax-logo-2.png"
-              alt="Logo Light"
-            />
-            <span className="text-[#08442B] font-bold text-2xl">AuroMax</span>
-          </a>
+    <nav>
+      <a href="/" className="n-logo">
+        <svg viewBox="0 0 72 80" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13,66 L13,37 A23,23 0 0 1 59,37 L59,66 L47,66 L47,37 A11,11 0 0 0 25,37 L25,66 Z"
+            fill="#C9A84C"
+          />
+          <circle cx="36" cy="48" r="5" fill="#C95E3A" />
+        </svg>
+        <div className="n-logo-text">
+          <div className="n-logo-name">AUROMAX</div>
+          <div className="n-logo-tag">Hong Kong · Indonesia</div>
         </div>
-
-        {/* Desktop Nav */}
-        <ul className="hidden lg:flex items-center gap-10 nav-contact">
-          {navLinks.map((link, i) => (
-            <li key={i}>
-              <NavLink
-                to={link.path}
-                className={({ isActive }) =>
-                  `font-medium transition ${
-                    isActive
-                      ? "text-[#08442B] font-bold border-b-2 border-[#08442B]"
-                      : "text-black hover:text-[#08442B]"
-                  }`
-                }
-              >
-                {link.name}
-              </NavLink>
+      </a>
+      <div className="n-mid">Trust First. Desire Always.</div>
+      <div className="n-r">
+        <a href="/about">About</a>
+        <div className="n-dd">
+          <a href="/services">Services ▾</a>
+          <ul className="n-ddm">
+            <li>
+              <a href="/services#trading">Trading &amp; Commodities</a>
             </li>
-          ))}
-        </ul>
-        {/* Mobile Toggle Button */}
-        <button
-          className="lg:hidden p-2 text-white"
-          onClick={() => setMobileMenuOpen(true)}
-        >
-          <svg
-            className={`h-7 w-7 transition`}
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-          >
-            <path strokeLinecap="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </nav>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-black/40 backdrop-blur-sm">
-          <aside className="absolute right-0 top-0 h-full w-72 bg-white shadow-xl p-6 animate-slideIn">
-            <div className="flex justify-between items-center mb-6">
-              <span className="text-[#08442B] text-2xl font-bold">AuroMax</span>
-
-              <button
-                className="p-2 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-
-            {/* Mobile Links */}
-            <nav className="flex flex-col gap-4">
-              {navLinks.map((link, i) => (
-                <NavLink
-                  key={i}
-                  to={link.path}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    `text-lg font-medium ${
-                      isActive
-                        ? "text-[#08442B] font-bold"
-                        : "text-gray-900 hover:text-[#08442B]"
-                    }`
-                  }
-                >
-                  {link.name}
-                </NavLink>
-              ))}
-            </nav>
-          </aside>
+            <li>
+              <a href="/services#property">Property Development</a>
+            </li>
+            <li>
+              <a href="/services#mes">Market Entry (MES)</a>
+            </li>
+            <li>
+              <a href="/services#csr">Community &amp; CSR</a>
+            </li>
+          </ul>
         </div>
-      )}
-    </header>
+        <a href="/about#indonesia">Indonesia</a>
+
+        <a href="/contact" className="n-cta">
+          Contact
+        </a>
+      </div>
+    </nav>
   );
 }
