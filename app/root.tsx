@@ -1,7 +1,6 @@
 import {
   isRouteErrorResponse,
   Links,
-  Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
@@ -12,7 +11,7 @@ import Footer from "./components/Footer";
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import "../public/style.scss";
+import "./style.scss";
 import CustomCursor from "./customCursor";
 
 export const links: Route.LinksFunction = () => [
