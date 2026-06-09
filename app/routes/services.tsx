@@ -117,8 +117,7 @@ export default function Services() {
             <div
               className="sp-img"
               style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80')",
+                backgroundImage: "url('/images/new/Gili-Trawangan-2.jpg')",
                 backgroundPosition: "center 30%",
               }}
             ></div>
@@ -306,9 +305,8 @@ export default function Services() {
             <div
               className="sp-img"
               style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1600&q=80')",
-                backgroundPosition: "center 25%",
+                backgroundImage: "url('/images/new/land.jpg')",
+                backgroundPosition: "bottom center",
               }}
             ></div>
             <div className="sp-ov"></div>
@@ -446,8 +444,7 @@ export default function Services() {
           <div
             className="qb-img"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=80')",
+              backgroundImage: "url('/images/new/ostrov-lombok-3.jpg')",
               backgroundPosition: "center 30%",
             }}
           ></div>
@@ -468,8 +465,7 @@ export default function Services() {
             <div
               className="sp-img"
               style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1600&q=80')",
+                backgroundImage: "url('/images/new/ostrov-lombok.jpg')",
                 backgroundPosition: "center 30%",
               }}
             ></div>
@@ -634,8 +630,7 @@ export default function Services() {
           <div
             className="qb-img"
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&q=80')",
+              backgroundImage: "url('/images/new/gili-island.JPG')",
               backgroundPosition: "center 35%",
             }}
           ></div>
@@ -656,8 +651,7 @@ export default function Services() {
             <div
               className="sp-img"
               style={{
-                backgroundImage:
-                  "url('https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=1600&q=80')",
+                backgroundImage: "url('/images/new/rice-field-lombok.JPG')",
                 backgroundPosition: "center 25%",
               }}
             ></div>

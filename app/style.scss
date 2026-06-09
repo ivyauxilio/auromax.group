@@ -331,8 +331,7 @@ button {
 .h-img {
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1800&q=80")
-    center 40% / cover;
+  background: url("/images/new/pura-batu-bolong.jpg") center 40% / cover;
 }
 .h-ov1 {
   position: absolute;
@@ -527,8 +526,7 @@ button {
   .h-img {
     position: absolute;
     inset: 0;
-    background: url("https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1800&q=80")
-      center 35% / cover;
+    background: url("/images/new/Tiu-Kelep-Waterfall.jpg") center 35% / cover;
   }
   .h-ov1 {
     position: absolute;
@@ -791,8 +789,7 @@ button {
   .pp-main-img {
     position: absolute;
     inset: 0;
-    background: url("https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1400&q=80")
-      center/cover;
+    background: url("/images/new/gold-mineral.jpg") center/cover;
     transition: transform 0.8s;
   }
   .pp-main:hover .pp-main-img {
@@ -1615,8 +1612,7 @@ button {
   .h-img {
     position: absolute;
     inset: 0;
-    background: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1800&q=80")
-      center 40% / cover;
+    background: url("/images/new/gili-island.JPG") center 40% / cover;
   }
   .h-ov {
     position: absolute;
@@ -2570,8 +2566,7 @@ button {
   .h-img {
     position: absolute;
     inset: 0;
-    background: url("https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=1800&q=80")
-      center 40% / cover;
+    background: url("/images/new/moyo-island.jpg") center 40% / cover;
   }
   .h-ov {
     position: absolute;
@@ -3677,18 +3672,20 @@ button {
   transform: translate(3px, -3px);
 }
 .sc:nth-child(1) .sc-img {
-  background-image: url("https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1200&q=75");
+  background-image: url("/images/new/Gili-Trawangan-2.jpg");
 }
 .sc:nth-child(2) .sc-img {
-  background-image: url("https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1000&q=75");
-  background-position: center 25%;
+  background-image: url("/images/new/land.jpg");
+  // background-position: bottom 100%;
+  background-size: 190%;
+  background-position: bottom center;
 }
 .sc:nth-child(3) .sc-img {
-  background-image: url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1000&q=75");
+  background-image: url("/images/new/ostrov-lombok.jpg");
 }
 .sc:nth-child(4) .sc-img {
-  background-image: url("https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=1000&q=75");
-  background-position: center 20%;
+  background-image: url(('/images/new/rice-field-lombok.JPG'));
+  background-position: center center;
 }
 
 /* ── INDONESIA SPLIT ── */
@@ -3704,8 +3701,7 @@ button {
 .indo-photo-img {
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80")
-    center/cover;
+  background: url("/images/new/ostrov-lombok-3.jpg") center/cover;
   transition: transform 0.8s;
 }
 .indo:hover .indo-photo-img {
@@ -4078,8 +4074,7 @@ button {
 .why-photo-img {
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80")
-    center/cover;
+  background: url("/images/new/Pergasingan-Hill.jpeg") center/cover;
   transition: transform 0.8s;
 }
 .why:hover .why-photo-img {
@@ -4209,8 +4204,7 @@ button {
 .stmt-img {
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=2000&q=80")
-    center 55% / cover;
+  background: url("/images/new/moyo-island.jpg") center 55% / cover;
   filter: saturate(0.55);
 }
 .stmt-ov {
