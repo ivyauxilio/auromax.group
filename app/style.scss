@@ -105,12 +105,12 @@ nav {
 .n-logo {
   display: flex;
   align-items: center;
-  gap: 14px;
+  // gap: 14px;
   text-decoration: none;
 }
 .n-logo svg {
-  width: 36px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   flex-shrink: 0;
 }
 .n-logo-text {
@@ -118,7 +118,7 @@ nav {
 .n-logo-name {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 17px;
+  font-size: 35px;
   letter-spacing: 0.14em;
   color: var(--chalk);
   line-height: 1;
@@ -136,7 +136,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
   font-family: "Lato", sans-serif;
-  font-size: 11px;
+  font-size: 14px;
   font-style: italic;
   letter-spacing: 0.08em;
   color: rgba(255, 255, 255, 0.2);
@@ -149,7 +149,7 @@ nav {
 }
 .n-r a {
   font-family: "Montserrat", sans-serif;
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -4859,5 +4859,10 @@ footer {
   }
   .cb-btns {
     flex-direction: column;
+  }
+}
+@media (max-width: 730px) {
+  .n-logo-text .n-logo-name {
+    font-size: 17px;
   }
 }

@@ -39,7 +39,7 @@ export default function Header() {
         </svg>
         <div className="n-logo-text">
           <div className="n-logo-name">AUROMAX</div>
-          <div className="n-logo-tag">Hong Kong · Indonesia</div>
+          {/* <div className="n-logo-tag">Hong Kong · Indonesia</div> */}
         </div>
       </a>
       <div className="n-mid">Trust First. Desire Always.</div>
