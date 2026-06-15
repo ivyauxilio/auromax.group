@@ -105,12 +105,17 @@ nav {
 .n-logo {
   display: flex;
   align-items: center;
-  // gap: 14px;
+  gap: 14px;
   text-decoration: none;
 }
 .n-logo svg {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+}
+.n-logo img {
+  width: 43px;
+  height: 43px;
   flex-shrink: 0;
 }
 .n-logo-text {
@@ -118,7 +123,7 @@ nav {
 .n-logo-name {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 56px;
   letter-spacing: 0.14em;
   color: var(--chalk);
   line-height: 1;
@@ -139,7 +144,7 @@ nav {
   font-size: 14px;
   font-style: italic;
   letter-spacing: 0.08em;
-  color: rgba(255, 255, 255, 0.2);
+  color: #d6d6d6;
 }
 .n-r {
   margin-left: auto;
@@ -4681,10 +4686,11 @@ footer {
   }
   .h-body {
     padding: 24px 20px 0;
+    gap: 15px;
   }
   .h-top {
     flex-direction: column;
-    gap: 8px;
+    gap: 15px;
   }
   .h-top-r {
     text-align: left;
@@ -4861,12 +4867,223 @@ footer {
     flex-direction: column;
   }
 }
+
+/* HAMBURGER */
+
+.menu-btn {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.menu-btn span {
+  width: 24px;
+  height: 2px;
+  background: white;
+  border-radius: 99px;
+}
+
+/* OVERLAY */
+
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease;
+
+  z-index: 998;
+}
+
+.mobile-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* DRAWER */
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: min(90vw, 380px);
+  height: 100vh;
+
+  background: rgba(10, 31, 8, 0.97);
+  backdrop-filter: blur(24px);
+
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+
+  transform: translateX(100%);
+  opacity: 0;
+
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease;
+
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-drawer.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* HEADER */
+
+.drawer-top {
+  height: 80px;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.drawer-top h3 {
+  color: white;
+  margin: 0;
+  font-size: 20px;
+}
+
+.close-btn {
+  background: transparent;
+  border: 0;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* LINKS */
+
+.drawer-links {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.drawer-links a {
+  color: white;
+  text-decoration: none;
+
+  padding: 16px 18px;
+  // border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  transform: translateX(30px);
+  opacity: 0;
+
+  transition:
+    transform 0.45s ease,
+    opacity 0.45s ease,
+    background 0.3s ease;
+}
+
+.mobile-drawer.show .drawer-links a {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.drawer-links a:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.drawer-links a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.drawer-links a:nth-child(3) {
+  transition-delay: 0.15s;
+}
+.drawer-links a:nth-child(4) {
+  transition-delay: 0.2s;
+}
+.drawer-links a:nth-child(5) {
+  transition-delay: 0.25s;
+}
+.drawer-links a:nth-child(6) {
+  transition-delay: 0.3s;
+}
+.drawer-links a:nth-child(7) {
+  transition-delay: 0.35s;
+}
+
+.drawer-links a:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.drawer-cta {
+  margin-top: 12px;
+
+  // background: linear-gradient(135deg, #c9a84c, #e7c86e) !important;
+  background: var(--ember) !important;
+  color: #fff !important;
+
+  // color: black !important;
+  // font-weight: 700;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .desktop-menu,
+  .n-mid {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+}
+
 @media (max-width: 730px) {
+  .n-logo {
+    gap: 6px;
+  }
   .n-logo-text .n-logo-name {
-    font-size: 20px;
+    font-size: 26px;
+  }
+  .drawer-top {
+    .n-logo-text .n-logo-name {
+      font-size: 35px;
+    }
+    .n-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .n-logo img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      display: block;
+    }
   }
   .n-logo svg {
     width: 50px;
     height: 50px;
+  }
+  .n-logo img {
+    width: 23px;
+    height: 23px;
   }
 }
