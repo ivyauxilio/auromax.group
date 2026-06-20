@@ -50,7 +50,7 @@ export const meta: Route.MetaFunction = () => {
     },
     {
       property: "og:image",
-      content: "/images/AuroMax-logo.png",
+      content: "/auromax-logo.png",
     },
   ];
 };
