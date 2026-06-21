@@ -47,10 +47,10 @@ export default function Header() {
             />
             <circle cx="36" cy="48" r="5" fill="#C95E3A" />
           </svg> */}
-          <img src="/auromax-logo.png" />
-          <div className="n-logo-text">
+          <img src="/auromax-logo-edited.png" />
+          {/* <div className="n-logo-text">
             <div className="n-logo-name">AUROMAX</div>
-          </div>
+          </div> */}
         </a>
         <div className="n-mid">Trust First. Desire Always.</div>
         <div className="n-r">
@@ -100,10 +100,10 @@ export default function Header() {
       <aside className={`mobile-drawer ${open ? "show" : ""}`}>
         <div className="drawer-top">
           <a href="/" className="n-logo">
-            <img src="/auromax-logo.png" />
-            <div className="n-logo-text">
+            <img src="/auromax-logo-edited.png" />
+            {/* <div className="n-logo-text">
               <div className="n-logo-name">AUROMAX</div>
-            </div>
+            </div> */}
           </a>
 
           <button className="close-btn" onClick={() => setOpen(false)}>
