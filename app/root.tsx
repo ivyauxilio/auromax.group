@@ -62,6 +62,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <Links />
       </head>
       <body>
